@@ -1,0 +1,4 @@
+#!/bin/bash
+
+VSN=2.5.16
+docker build --network host --build-arg OPENLDAP_VSN=$VSN -t zmstone/openldap:$VSN .
